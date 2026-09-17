@@ -33,7 +33,7 @@ description: <第三人称描述。功能 + 使用场景。>
 version: <与 marketplace.json 匹配的语义化版本>
 metadata:
   openclaw:
-    homepage: https://github.com/hl85/super-creator#sc-<name>
+    homepage: https://github.com/v2camp/v2creator-skills#sc-<name>
     requires:          # 仅当 skill 有脚本时包含
       anyBins:
         - bun
@@ -52,7 +52,7 @@ metadata:
 
 ## Skill 分组
 
-所有 skills 注册在单一的 `super-creator` 插件下。在文档中决定 skill 应该出现在哪个分组时，使用以下逻辑分组：
+所有 skills 注册在单一的 `v2creator` 插件下。在文档中决定 skill 应该出现在哪个分组时，使用以下逻辑分组：
 
 | 如果你的 skill... | 使用分组 |
 |-------------------|---------|
@@ -62,7 +62,7 @@ metadata:
 | 转换或处理内容 | 审核与优化 |
 | 选题、写作、挖掘内容 | 创作流水线 |
 
-如果添加新的逻辑分组，更新展示分组 skills 的文档，但保持 skill 注册在单一的 `super-creator` 插件条目下。
+如果添加新的逻辑分组，更新展示分组 skills 的文档，但保持 skill 注册在单一的 `v2creator` 插件条目下。
 
 ## 编写描述
 
@@ -126,16 +126,16 @@ skills/sc-example/
 检查 EXTEND.md 是否存在（优先级顺序）：
 
 \`\`\`bash
-test -f .super-creator/<skill-name>/EXTEND.md && echo "project"
-test -f "${XDG_CONFIG_HOME:-$HOME/.config}/super-creator/<skill-name>/EXTEND.md" && echo "xdg"
-test -f "$HOME/.super-creator/<skill-name>/EXTEND.md" && echo "user"
+test -f .v2creator/<skill-name>/EXTEND.md && echo "project"
+test -f "${XDG_CONFIG_HOME:-$HOME/.config}/v2creator/<skill-name>/EXTEND.md" && echo "xdg"
+test -f "$HOME/.v2creator/<skill-name>/EXTEND.md" && echo "user"
 \`\`\`
 
 | 路径 | 位置 |
 |------|------|
-| `.super-creator/<skill-name>/EXTEND.md` | 项目目录 |
-| `$XDG_CONFIG_HOME/super-creator/<skill-name>/EXTEND.md` | XDG 配置（~/.config） |
-| `$HOME/.super-creator/<skill-name>/EXTEND.md` | 用户主目录（旧版） |
+| `.v2creator/<skill-name>/EXTEND.md` | 项目目录 |
+| `$XDG_CONFIG_HOME/v2creator/<skill-name>/EXTEND.md` | XDG 配置（~/.config） |
+| `$HOME/.v2creator/<skill-name>/EXTEND.md` | 用户主目录（旧版） |
 
 | 结果 | 操作 |
 |------|------|

@@ -70,8 +70,8 @@ For a selected account with alias `{alias}`:
 
 1. `app_id` / `app_secret` inline in EXTEND.md account block
 2. Env var `WECHAT_{ALIAS}_APP_ID` / `WECHAT_{ALIAS}_APP_SECRET` (alias uppercased, hyphens → underscores)
-3. `.super-creator/.env` with prefixed key `WECHAT_{ALIAS}_APP_ID`
-4. `~/.super-creator/.env` with prefixed key
+3. `.v2creator/.env` with prefixed key `WECHAT_{ALIAS}_APP_ID`
+4. `~/.v2creator/.env` with prefixed key
 5. Fallback to unprefixed `WECHAT_APP_ID` / `WECHAT_APP_SECRET`
 
 **.env multi-account example**:

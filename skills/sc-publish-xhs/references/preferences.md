@@ -3,8 +3,8 @@
 ## EXTEND.md
 
 Check for preferences in order:
-- `.super-creator/publish-xhs/EXTEND.md` (project)
-- `$HOME/.super-creator/publish-xhs/EXTEND.md` (user)
+- `.v2creator/publish-xhs/EXTEND.md` (project)
+- `$HOME/.v2creator/publish-xhs/EXTEND.md` (user)
 
 ## Supported Options
 
@@ -17,5 +17,5 @@ Check for preferences in order:
 
 ## Chrome Profile Path
 
-Uses the shared super-creator Chrome profile. See [chrome-profile.md](chrome-profile.md) for paths per OS.
+Uses the shared v2creator Chrome profile. See [chrome-profile.md](chrome-profile.md) for paths per OS.
 Override per-skill via `SC_CHROME_PROFILE_DIR` env var or `CHROME_PROFILE_DIR` in EXTEND.md.

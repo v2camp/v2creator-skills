@@ -2,7 +2,7 @@
 
 ## 概述
 
-Super-creator 使用 **Git Flow** 分支模型配合自动化发布流程。
+v2creator 使用 **Git Flow** 分支模型配合自动化发布流程。
 
 ```
 main (生产环境)
@@ -393,8 +393,8 @@ v3.1.0    # 次版本发布
 
 ```bash
 # 克隆仓库
-git clone https://github.com/hl85/super-creator.git
-cd super-creator
+git clone https://github.com/v2camp/v2creator-skills.git
+cd v2creator-skills
 
 # 安装依赖（通过 `prepare` 脚本自动配置 git hooks）
 npm install

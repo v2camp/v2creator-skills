@@ -107,7 +107,7 @@ test("resolveRenderOptions loads workspace EXTEND settings and lets explicit opt
 
   const extendPath = path.join(
     root,
-    ".super-creator",
+    ".v2creator",
     "convert-markdown-to-html",
     "EXTEND.md",
   );

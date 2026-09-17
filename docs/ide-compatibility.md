@@ -1,6 +1,6 @@
 # IDE 兼容性说明
 
-super-creator-skills 设计为 IDE 中立的 AI Skill 集合，核心资产不依赖任何特定 AI IDE。
+v2creator-skills 设计为 IDE 中立的 AI Skill 集合，核心资产不依赖任何特定 AI IDE。
 
 ## 设计原则
 
@@ -93,7 +93,7 @@ super-creator-skills 设计为 IDE 中立的 AI Skill 集合，核心资产不�
 
 ## 添加新 IDE 支持
 
-如果你在其他 AI IDE 中使用 super-creator-skills，需要确认：
+如果你在其他 AI IDE 中使用 v2creator-skills，需要确认：
 
 1. **Skill 加载**：IDE 能读取工作区中的 Markdown 文件（SKILL.md）
 2. **MCP 支持**：IDE 支持 MCP 协议，可以配置 `@playwright/mcp` 或内置浏览器

@@ -1,6 +1,6 @@
-# super-creator
+# v2creator-skills（短名 cra）
 
-AI 驱动的内容创作工具箱，专为小红书和微信公众号打造。
+AI 驱动的内容创作工具箱，专为小红书和微信公众号打造。可用短名 **cra** 代指本技能集合。
 
 > **零配置免费生图**：不需要 API Key，直接用 Gemini/ChatGPT 网页版生图。
 
@@ -25,14 +25,14 @@ AI 驱动的内容创作工具箱，专为小红书和微信公众号打造。
 
 ### 1. 安装
 
-super-creator-skills 的核心是 Markdown 文件 + TypeScript 脚本，**不绑定任何特定 IDE**。任何支持读取文件和 MCP 的 AI IDE 都能使用。
+v2creator-skills 的核心是 Markdown 文件 + TypeScript 脚本，**不绑定任何特定 IDE**。任何支持读取文件和 MCP 的 AI IDE 都能使用。
 
 **TRAE（推荐，已验证）**：
 将仓库 clone 到工作目录，TRAE 启动时会自动扫描 `.agents/skills/` 目录加载所有 skill。
 
 **Claude Code**：
 ```bash
-/plugin marketplace add hl85/super-creator
+/plugin marketplace add v2camp/v2creator-skills
 ```
 
 **Cursor / 其他 AI IDE**：
@@ -151,7 +151,7 @@ super-creator-skills 的核心是 Markdown 文件 + TypeScript 脚本，**不绑
 
 ### 配置 API Key（可选）
 
-编辑 `~/.super-creator/.env` 文件：
+编辑 `~/.v2creator/.env` 文件：
 
 ```bash
 # 选择你有的 Key 配置即可，不需要全部
@@ -210,7 +210,7 @@ A: 目前专注于 **小红书** 和 **微信公众号** 两个平台。
 | [流水线说明](docs/pipeline.md) | 全流程 6 个阶段的工作原理 |
 | [环境变量参考](docs/env-reference.md) | 所有 API Key 和配置项说明 |
 | [视觉 Skill 选择指南](docs/visuals.md) | 不同场景用什么配图 Skill |
-| [创建新 Skill](docs/creating-skills.md) | 如何为 super-creator 贡献新 Skill |
+| [创建新 Skill](docs/creating-skills.md) | 如何为 v2creator 贡献新 Skill |
 | [更新日志](CHANGELOG.md) | 每个版本的变更记录 |
 
 ---

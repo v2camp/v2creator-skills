@@ -10,9 +10,9 @@ sc-publish-xhs 的 CDP 模式通过 Chrome DevTools Protocol 控制真实 Chrome
 
 | 平台 | 路径 |
 |------|------|
-| macOS | `~/Library/Application Support/super-creator/chrome-profile` |
-| Linux | `~/.config/super-creator/chrome-profile` |
-| Windows | `%APPDATA%\super-creator\chrome-profile` |
+| macOS | `~/Library/Application Support/v2creator/chrome-profile` |
+| Linux | `~/.config/v2creator/chrome-profile` |
+| Windows | `%APPDATA%\v2creator\chrome-profile` |
 
 可通过 `SC_CHROME_PROFILE_DIR` 环境变量覆盖，或在 EXTEND.md 中设置 `CHROME_PROFILE_DIR`。
 

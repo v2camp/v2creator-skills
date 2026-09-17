@@ -138,17 +138,17 @@ header: "Save"
 question: "Where to save preferences?"
 options:
   - label: "Project (Recommended)"
-    description: ".super-creator/ (this project only)"
+    description: ".v2creator/ (this project only)"
   - label: "User"
-    description: "~/.super-creator/ (all projects)"
+    description: "~/.v2creator/ (all projects)"
 ```
 
 ### Save Locations
 
 | Choice | Path | Scope |
 |--------|------|-------|
-| Project | `.super-creator/imagine/EXTEND.md` | Current project |
-| User | `$HOME/.super-creator/imagine/EXTEND.md` | All projects |
+| Project | `.v2creator/imagine/EXTEND.md` | Current project |
+| User | `$HOME/.v2creator/imagine/EXTEND.md` | All projects |
 
 ### EXTEND.md Template
 

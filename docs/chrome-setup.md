@@ -1,6 +1,6 @@
 # Chrome 首次配置指南
 
-super-creator 的多个 skill 通过 Chrome DevTools Protocol (CDP) 控制真实 Chrome 浏览器，实现自动化发布和内容抓取。本文覆盖所有依赖 Chrome 的 skill 的共同配置步骤。
+v2creator 的多个 skill 通过 Chrome DevTools Protocol (CDP) 控制真实 Chrome 浏览器，实现自动化发布和内容抓取。本文覆盖所有依赖 Chrome 的 skill 的共同配置步骤。
 
 **依赖 Chrome 的 skill：** `sc-publish-wechat`、`sc-publish-xhs`、`sc-web-ai`
 
@@ -12,9 +12,9 @@ super-creator 的多个 skill 通过 Chrome DevTools Protocol (CDP) 控制真实
 
 | 平台 | 路径 |
 |------|------|
-| macOS | `~/Library/Application Support/super-creator/chrome-profile` |
-| Linux | `~/.config/super-creator/chrome-profile` |
-| Windows | `%APPDATA%\super-creator\chrome-profile` |
+| macOS | `~/Library/Application Support/v2creator/chrome-profile` |
+| Linux | `~/.config/v2creator/chrome-profile` |
+| Windows | `%APPDATA%\v2creator\chrome-profile` |
 
 可通过 `SC_CHROME_PROFILE_DIR` 环境变量覆盖，或在各 skill 的 EXTEND.md 中设置 `CHROME_PROFILE_DIR`。
 
@@ -87,6 +87,6 @@ pkill -f "Google Chrome"
 如果需要为不同项目使用不同的登录状态（如多个公众号或小红书账号），可以通过环境变量切换：
 
 ```bash
-SC_CHROME_PROFILE_DIR=~/.config/super-creator/profile-work ./sc-run sc-publish-wechat wechat-article article.md
-SC_CHROME_PROFILE_DIR=~/.config/super-creator/profile-personal ./sc-run sc-publish-xhs
+SC_CHROME_PROFILE_DIR=~/.config/v2creator/profile-work ./sc-run sc-publish-wechat wechat-article article.md
+SC_CHROME_PROFILE_DIR=~/.config/v2creator/profile-personal ./sc-run sc-publish-xhs
 ```

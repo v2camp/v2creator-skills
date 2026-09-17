@@ -8,7 +8,7 @@ sc-publish-xhs uses Chrome CDP to automate the full publishing workflow: image u
 
 sc-publish-xhs uses the same shared Chrome profile as sc-publish-wechat.
 
-Profile path (macOS): `~/Library/Application Support/super-creator/chrome-profile`
+Profile path (macOS): `~/Library/Application Support/v2creator/chrome-profile`
 
 ### First-time login:
 1. Run the script in preview mode (no `--publish` flag).

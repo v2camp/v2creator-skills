@@ -9,7 +9,7 @@
 - **课程内容**（Markdown）在 `courses/` 下
 - **商业/规划文档**在 `docs/`
 - **店铺文案**在 `shops/`（淘宝、闲鱼、小红书）
-- **super-creator-skills**：本目录下的 AI 内容创作工具箱 Skill 集合
+- **v2creator-skills**（短名 **cra**）：本目录下的 AI 内容创作工具箱 Skill 集合
 
 本仓库大部分工作是编辑中文 Markdown。除非用户另有要求，否则保持现有语气、结构和标题。
 
@@ -17,7 +17,7 @@
 
 **所有文档使用中文**。不考虑向英文用户群渗透，不需要维护英文文档。
 
-## super-creator-skills 结构
+## v2creator-skills 结构
 
 ```
 skills/          # 14 个 Skill（每个包含 SKILL.md、scripts/、references/）
@@ -33,7 +33,7 @@ posts/           # 最终交付物（用户可见）
 
 ### IDE 无关性
 
-super-creator-skills 的核心资产（SKILL.md Markdown 文档 + TypeScript scripts/）是**完全 IDE 中立**的，不依赖任何特定 AI IDE。
+v2creator-skills 的核心资产（SKILL.md Markdown 文档 + TypeScript scripts/）是**完全 IDE 中立**的，不依赖任何特定 AI IDE。
 
 - `.claude-plugin/` 目录仅为 Claude Code 的插件注册兼容层，不影响其他 IDE 使用
 - Skills 通过 `.agents/skills/` 目录自动扫描（TRAE）或 `skills/` 目录手动引用（Cursor/Codex 等）
@@ -100,7 +100,7 @@ bun skills/<skill>/scripts/main.ts [args]
 
 ## 临时目录约定
 
-所有 super-creator skills 使用 **`.super/`**（不是 `.course/`）作为**过程产物**（中间文件、草稿、状态、提示词）的根目录。最终交付物默认输出到 **`posts/`**。
+所有 v2creator skills 使用 **`.super/`**（不是 `.course/`）作为**过程产物**（中间文件、草稿、状态、提示词）的根目录。最终交付物默认输出到 **`posts/`**。
 
 ### 核心分离
 
@@ -192,7 +192,7 @@ docs(project): 更新架构文档
 
 1. 创建 `skills/<name>/SKILL.md`，包含 YAML frontmatter（name、description、version）
 2. 如果需要，在 `skills/<name>/scripts/` 中添加 TypeScript
-3. 在 `.claude-plugin/marketplace.json` 的 `super-creator` 插件下注册
+3. 在 `.claude-plugin/marketplace.json` 的 `v2creator` 插件下注册
 4. 完整要求见 `docs/creating-skills.md`
 
 ## MCP 浏览器工具使用

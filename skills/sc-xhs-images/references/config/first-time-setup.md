@@ -76,17 +76,17 @@ header: "Save"
 question: "Where to save preferences?"
 options:
   - label: "Project"
-    description: ".supercreator/ (this project only)"
+    description: ".v2creator/ (this project only)"
   - label: "User"
-    description: "~/.supercreator/ (all projects)"
+    description: "~/.v2creator/ (all projects)"
 ```
 
 ## Save Locations
 
 | Choice | Path | Scope |
 |--------|------|-------|
-| Project | `.supercreator/xhs-images/EXTEND.md` | Current project |
-| User | `~/.supercreator/xhs-images/EXTEND.md` | All projects |
+| Project | `.v2creator/xhs-images/EXTEND.md` | Current project |
+| User | `~/.v2creator/xhs-images/EXTEND.md` | All projects |
 
 ## After Setup
 

@@ -19,7 +19,7 @@ scripts/
 
 ### 工作原理
 
-1. **Chrome 启动**：查找或启动 Chrome，使用 `--remote-debugging-port` 和共享 super-creator profile
+1. **Chrome 启动**：查找或启动 Chrome，使用 `--remote-debugging-port` 和共享 v2creator profile
 2. **CDP 连接**：通过 WebSocket 连接 Chrome DevTools Protocol
 3. **页面会话**：打开/导航到 `https://creator.xiaohongshu.com/publish/publish`
 4. **登录检测**：等待发布页面；未登录则导航到登录页并等待
@@ -120,7 +120,7 @@ cd scripts && npx -y bun xhs-post.ts note \
 cd scripts && npx -y bun xhs-post.ts note \
   --title "笔记标题" \
   --image ./img.png \
-  --profile ~/.config/super-creator/chrome-profile
+  --profile ~/.config/v2creator/chrome-profile
 ```
 
 ---

@@ -9,7 +9,7 @@ metadata:
 
 # sc-styles — 统一图像风格库
 
-这是一个 **Tool Wrapper** 模式的共享 skill，为 super-creator-skills 生态中所有生图和配图相关 skill 提供统一的视觉风格定义。
+这是一个 **Tool Wrapper** 模式的共享 skill，为 v2creator-skills 生态中所有生图和配图相关 skill 提供统一的视觉风格定义。
 
 ## 设计理念
 

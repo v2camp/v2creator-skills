@@ -7,7 +7,7 @@ Skills 在 YAML front matter 中包含 `metadata.openclaw` 字段：
 ```yaml
 metadata:
   openclaw:
-    homepage: https://github.com/hl85/super-creator#sc-<skill-name>
+    homepage: https://github.com/v2camp/v2creator-skills#sc-<skill-name>
     requires:          # 仅适用于带脚本的 skill
       anyBins:
         - bun

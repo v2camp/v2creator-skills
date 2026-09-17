@@ -6,7 +6,7 @@
 
 ## 第一步：安装运行时
 
-super-creator 的脚本通过 Bun 运行。
+v2creator 的脚本通过 Bun 运行。
 
 ```bash
 # macOS（推荐）
@@ -57,16 +57,16 @@ v3.4.0 之后最推荐的方式，不需要任何 API Key：
 2. 创建用户级凭证文件：
 
 ```bash
-mkdir -p ~/.super-creator
-cat >> ~/.super-creator/.env << 'EOF'
+mkdir -p ~/.v2creator
+cat >> ~/.v2creator/.env << 'EOF'
 GOOGLE_API_KEY=your_key_here
 EOF
 ```
 
 其他 provider 的 key 名称见 [env-reference.md](env-reference.md)。
 
-> **为什么放 `~/.super-creator/.env`？**
-> 这是用户级凭证文件，所有项目共享，无需每个项目单独配置。项目级配置放 `.super-creator/.env`（优先级更高）。`.env` 文件已在 `.gitignore` 中，不会被提交。
+> **为什么放 `~/.v2creator/.env`？**
+> 这是用户级凭证文件，所有项目共享，无需每个项目单独配置。项目级配置放 `.v2creator/.env`（优先级更高）。`.env` 文件已在 `.gitignore` 中，不会被提交。
 
 ---
 
@@ -116,8 +116,8 @@ AI 会自动使用 `sc-web-ai` 通过 IDE 浏览器操作 Gemini 免费生图。
 大多数 skill 首次调用时会通过对话引导你完成偏好设置（主题、水印、输出目录等），设置结果保存为 `EXTEND.md`：
 
 ```
-~/.super-creator/<skill-name>/EXTEND.md   ← 用户级（所有项目共享）
-.super-creator/<skill-name>/EXTEND.md     ← 项目级（仅当前项目，优先级更高）
+~/.v2creator/<skill-name>/EXTEND.md   ← 用户级（所有项目共享）
+.v2creator/<skill-name>/EXTEND.md     ← 项目级（仅当前项目，优先级更高）
 ```
 
 **你不需要手动创建这些文件**，skill 会在第一次运行时自动创建。如果想重置某个 skill 的偏好，删除对应 `EXTEND.md` 即可。
@@ -136,10 +136,10 @@ TRAE IDE 启动时会自动扫描项目 `.agents/skills/` 目录下的所有 ski
 
 ```bash
 # 创建项目的符号链接到全局 skills 目录
-ln -sf /path/to/super-creator/skills/sc-<skill-name> ~/.trae/skills/sc-<skill-name>
+ln -sf /path/to/v2creator-skills/skills/sc-<skill-name> ~/.trae/skills/sc-<skill-name>
 
 # 示例：以 sc-imagine 为例
-ln -sf /path/to/super-creator/skills/sc-imagine ~/.trae/skills/sc-imagine
+ln -sf /path/to/v2creator-skills/skills/sc-imagine ~/.trae/skills/sc-imagine
 
 # 对其他开发中的 skill 重复上述操作
 ```
@@ -154,13 +154,13 @@ ln -sf /path/to/super-creator/skills/sc-imagine ~/.trae/skills/sc-imagine
 → 重新打开终端，或运行 `source ~/.zshrc`（zsh）/ `source ~/.bashrc`（bash）
 
 **Q：图像生成失败，提示 API Key 无效**
-→ 检查 `~/.super-creator/.env` 里的 key 是否正确，无多余空格或换行
+→ 检查 `~/.v2creator/.env` 里的 key 是否正确，无多余空格或换行
 
 **Q：Chrome 无法启动**
 → 确认安装的是完整版 Google Chrome（不是 Chromium），见 [chrome-setup.md](chrome-setup.md)
 
 **Q：如何查看当前配置了哪些 skill？**
-→ 运行 `ls ~/.super-creator/` 查看已有 EXTEND.md 的 skill
+→ 运行 `ls ~/.v2creator/` 查看已有 EXTEND.md 的 skill
 
 **Q：WeChat 发布需要什么凭证？**
 → API 方式需要 `WECHAT_APP_ID` + `WECHAT_APP_SECRET`（需要微信公众号后台申请）；Browser 方式只需要 Chrome 扫码登录，见 [env-reference.md](env-reference.md)

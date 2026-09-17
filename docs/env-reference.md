@@ -1,6 +1,6 @@
 # 环境变量与配置参考
 
-super-creator 使用两种配置机制：
+v2creator 使用两种配置机制：
 
 - **`.env` 文件** — 存放 API Key 等凭证（不提交 git）
 - **`EXTEND.md` 文件** — 存放每个 skill 的使用偏好
@@ -18,26 +18,26 @@ CLI 参数
     ↓ 覆盖
 环境变量（shell export）
     ↓ 覆盖
-项目级 .env：.super-creator/.env
+项目级 .env：.v2creator/.env
     ↓ 覆盖
-用户级 .env：~/.super-creator/.env
+用户级 .env：~/.v2creator/.env
 ```
 
 **推荐做法：**
-- API Key 放 `~/.super-creator/.env`（一次配置，所有项目共享）
-- 项目专属 key 放 `.super-creator/.env`
+- API Key 放 `~/.v2creator/.env`（一次配置，所有项目共享）
+- 项目专属 key 放 `.v2creator/.env`
 - 不要把包含 key 的 `.env` 文件提交到 git
 
 ---
 
 ## `.env` 文件模板
 
-复制以下模板到 `~/.super-creator/.env`，填入你实际使用的 key，其余行保持注释即可：
+复制以下模板到 `~/.v2creator/.env`，填入你实际使用的 key，其余行保持注释即可：
 
 ```bash
 # =============================================================================
-# super-creator 用户级凭证配置
-# 路径：~/.super-creator/.env
+# v2creator 用户级凭证配置
+# 路径：~/.v2creator/.env
 # 说明：填入你需要使用的 provider key，其余行无需修改
 # =============================================================================
 
@@ -83,9 +83,9 @@ CLI 参数
 # XIAOHONGSHU_MCP_URL=
 
 # ── Chrome 路径覆盖（通常不需要设置）─────────────────────────────────────────
-# 默认路径：~/Library/Application Support/super-creator/chrome-profile (macOS)
-#            ~/.config/super-creator/chrome-profile (Linux)
-#            %APPDATA%\super-creator\chrome-profile (Windows)
+# 默认路径：~/Library/Application Support/v2creator/chrome-profile (macOS)
+#            ~/.config/v2creator/chrome-profile (Linux)
+#            %APPDATA%\v2creator\chrome-profile (Windows)
 # SC_CHROME_PROFILE_DIR=
 ```
 
@@ -118,7 +118,7 @@ CLI 参数
 | `WECHAT_BROWSER_CHROME_PATH` | 自定义 Chrome 路径 | 通常不需要 |
 | `WECHAT_BROWSER_PROFILE_DIR` | 微信专用 Chrome Profile | 通常不需要 |
 
-> **多账号支持**：在 `.super-creator/publish-wechat/EXTEND.md` 中配置 `accounts:` 数组，可管理多个公众号，无需多个环境变量。详见 `skills/sc-publish-wechat/references/multi-account.md`。
+> **多账号支持**：在 `.v2creator/publish-wechat/EXTEND.md` 中配置 `accounts:` 数组，可管理多个公众号，无需多个环境变量。详见 `skills/sc-publish-wechat/references/multi-account.md`。
 
 ### Chrome & CDP
 

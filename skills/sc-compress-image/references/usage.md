@@ -38,9 +38,9 @@
 
 Check EXTEND.md existence (priority order):
 
-1. `.super-creator/compress-image/EXTEND.md` (Project directory)
-2. `$HOME/.super-creator/compress-image/EXTEND.md` (User home)
-3. `${XDG_CONFIG_HOME:-$HOME/.config}/super-creator/compress-image/EXTEND.md`
+1. `.v2creator/compress-image/EXTEND.md` (Project directory)
+2. `$HOME/.v2creator/compress-image/EXTEND.md` (User home)
+3. `${XDG_CONFIG_HOME:-$HOME/.config}/v2creator/compress-image/EXTEND.md`
 
 **EXTEND.md Supports**:
 - `default_format`: webp | png | jpeg

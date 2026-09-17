@@ -87,17 +87,17 @@ Check preferences and existing state, then ask ALL needed questions in ONE AskUs
 
 ```bash
 # macOS, Linux, WSL, Git Bash
-test -f .super-creator/article-illustrator/EXTEND.md && echo "project"
-test -f "${XDG_CONFIG_HOME:-$HOME/.config}/super-creator/article-illustrator/EXTEND.md" && echo "xdg"
-test -f "$HOME/.super-creator/article-illustrator/EXTEND.md" && echo "user"
+test -f .v2creator/article-illustrator/EXTEND.md && echo "project"
+test -f "${XDG_CONFIG_HOME:-$HOME/.config}/v2creator/article-illustrator/EXTEND.md" && echo "xdg"
+test -f "$HOME/.v2creator/article-illustrator/EXTEND.md" && echo "user"
 ```
 
 ```powershell
 # PowerShell (Windows)
-if (Test-Path .super-creator/article-illustrator/EXTEND.md) { "project" }
+if (Test-Path .v2creator/article-illustrator/EXTEND.md) { "project" }
 $xdg = if ($env:XDG_CONFIG_HOME) { $env:XDG_CONFIG_HOME } else { "$HOME/.config" }
-if (Test-Path "$xdg/super-creator/article-illustrator/EXTEND.md") { "xdg" }
-if (Test-Path "$HOME/.super-creator/article-illustrator/EXTEND.md") { "user" }
+if (Test-Path "$xdg/v2creator/article-illustrator/EXTEND.md") { "xdg" }
+if (Test-Path "$HOME/.v2creator/article-illustrator/EXTEND.md") { "user" }
 ```
 
 | Result | Action |

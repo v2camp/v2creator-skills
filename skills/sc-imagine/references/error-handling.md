@@ -9,12 +9,12 @@ If a tool exits with `No API key found` (or any variant of "missing key / missin
 1. Use `AskUserQuestion` to ask the user which provider they have and to supply the key.
    Example question: *"图片生成需要 API Key，您有哪个服务的 Key？（OpenAI / Google / DashScope / MiniMax 等）"*
 
-2. Save the key to `~/.super-creator/.env` (user-level, persists across projects). Use this exact shell sequence:
+2. Save the key to `~/.v2creator/.env` (user-level, persists across projects). Use this exact shell sequence:
    ```bash
-   mkdir -p ~/.super-creator
+   mkdir -p ~/.v2creator
    # Remove any existing line for this key first to avoid duplicates, then append
-   grep -v "^OPENAI_API_KEY=" ~/.super-creator/.env 2>/dev/null > /tmp/sc-env-tmp && mv /tmp/sc-env-tmp ~/.super-creator/.env || true
-   echo "OPENAI_API_KEY=<value-from-user>" >> ~/.super-creator/.env
+   grep -v "^OPENAI_API_KEY=" ~/.v2creator/.env 2>/dev/null > /tmp/sc-env-tmp && mv /tmp/sc-env-tmp ~/.v2creator/.env || true
+   echo "OPENAI_API_KEY=<value-from-user>" >> ~/.v2creator/.env
    ```
    Replace `OPENAI_API_KEY` with the correct variable name for the provider the user specified (see provider → variable mapping below).
 

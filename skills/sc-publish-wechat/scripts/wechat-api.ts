@@ -500,8 +500,8 @@ Environment Variables:
 
 Config File Locations (in priority order):
   1. Environment variables
-  2. <cwd>/.super-creator/.env
-  3. ~/.super-creator/.env
+  2. <cwd>/.v2creator/.env
+  3. ~/.v2creator/.env
 
 Example:
   npx -y bun wechat-api.ts article.md

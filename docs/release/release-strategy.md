@@ -2,7 +2,7 @@
 
 ## 概述
 
-super-creator 的发布流程通过 `/release-skills` Claude skill 实现**自动化**，支持 monorepo 风格的多 skill 发布，并能自动同步所有版本文件的版本号。
+v2creator 的发布流程通过 `/release-skills` Claude skill 实现**自动化**，支持 monorepo 风格的多 skill 发布，并能自动同步所有版本文件的版本号。
 
 ## 版本管理
 

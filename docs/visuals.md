@@ -1,6 +1,6 @@
 # 视觉 Skill 选择指南
 
-super-creator 有 3 个视觉内容生成 skill。本文帮助你快速选择合适的工具。
+v2creator 有 3 个视觉内容生成 skill。本文帮助你快速选择合适的工具。
 
 ---
 

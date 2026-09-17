@@ -146,7 +146,7 @@ Environment variables:
    SC_IMAGE_GEN_<PROVIDER>_CONCURRENCY  Override provider concurrency
    SC_IMAGE_GEN_<PROVIDER>_START_INTERVAL_MS  Override provider start gap in ms
 
-Env file load order: CLI args > EXTEND.md > process.env > <cwd>/.super-creator/.env > ~/.super-creator/.env`);
+Env file load order: CLI args > EXTEND.md > process.env > <cwd>/.v2creator/.env > ~/.v2creator/.env`);
 }
 
 export function parseArgs(argv: string[]): CliArgs {
@@ -342,8 +342,8 @@ async function loadEnv(): Promise<void> {
   const home = homedir();
   const cwd = process.cwd();
 
-  const homeEnv = await loadEnvFile(path.join(home, ".super-creator", ".env"));
-  const cwdEnv = await loadEnvFile(path.join(cwd, ".super-creator", ".env"));
+  const homeEnv = await loadEnvFile(path.join(home, ".v2creator", ".env"));
+  const cwdEnv = await loadEnvFile(path.join(cwd, ".v2creator", ".env"));
 
   for (const [k, v] of Object.entries(homeEnv)) {
     if (!process.env[k]) process.env[k] = v;
@@ -479,12 +479,12 @@ type ExtendConfigPathPair = {
 function getExtendConfigPathPairs(cwd: string, home: string): ExtendConfigPathPair[] {
   return [
     {
-      current: path.join(cwd, ".super-creator", "imagine", "EXTEND.md"),
-      legacy: path.join(cwd, ".super-creator", "imagine", "EXTEND.md"),
+      current: path.join(cwd, ".v2creator", "imagine", "EXTEND.md"),
+      legacy: path.join(cwd, ".v2creator", "imagine", "EXTEND.md"),
     },
     {
-      current: path.join(home, ".super-creator", "imagine", "EXTEND.md"),
-      legacy: path.join(home, ".super-creator", "imagine", "EXTEND.md"),
+      current: path.join(home, ".v2creator", "imagine", "EXTEND.md"),
+      legacy: path.join(home, ".v2creator", "imagine", "EXTEND.md"),
     },
   ];
 }
@@ -698,8 +698,8 @@ export function detectProvider(args: CliArgs): Provider {
     "[ACTION_REQUIRED: ask_user_for_api_key]\n" +
       "No API key found. Do NOT abandon the task — ask the user which provider they have and request the key.\n" +
       "Once obtained, save it with:\n" +
-      "  mkdir -p ~/.super-creator\n" +
-      "  echo 'PROVIDER_API_KEY=<value>' >> ~/.super-creator/.env\n" +
+      "  mkdir -p ~/.v2creator\n" +
+      "  echo 'PROVIDER_API_KEY=<value>' >> ~/.v2creator/.env\n" +
       "Provider → variable: OpenAI=OPENAI_API_KEY, Google/Gemini=GOOGLE_API_KEY, DashScope=DASHSCOPE_API_KEY, MiniMax=MINIMAX_API_KEY, OpenRouter=OPENROUTER_API_KEY, Replicate=REPLICATE_API_TOKEN, Seedream/Ark=ARK_API_KEY, Azure=AZURE_OPENAI_API_KEY+AZURE_OPENAI_BASE_URL\n" +
       "Then retry the original command."
   );

@@ -36,7 +36,7 @@ interface XhsPostOptions {
  * Post an image-text note to Xiaohongshu via Chrome CDP automation.
  *
  * Flow:
- * 1. Launch Chrome with shared super-creator profile (or reuse existing session)
+ * 1. Launch Chrome with shared v2creator profile (or reuse existing session)
  * 2. Navigate to XHS creator center publish page
  * 3. Wait for login if needed
  * 4. Upload images via DOM.setFileInputFiles (fallback: clipboard paste)

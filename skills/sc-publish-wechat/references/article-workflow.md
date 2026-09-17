@@ -63,8 +63,8 @@ mkdir -p "$(pwd)/publish-wechat/$(date +%Y-%m-%d)"
 
 ```bash
 # macOS, Linux, WSL, Git Bash
-test -f .super-creator/.env && grep -q "WECHAT_APP_ID" .super-creator/.env && echo "project"
-test -f "$HOME/.super-creator/.env" && grep -q "WECHAT_APP_ID" "$HOME/.super-creator/.env" && echo "user"
+test -f .v2creator/.env && grep -q "WECHAT_APP_ID" .v2creator/.env && echo "project"
+test -f "$HOME/.v2creator/.env" && grep -q "WECHAT_APP_ID" "$HOME/.v2creator/.env" && echo "user"
 ```
 
 **If Credentials Missing - Guide Setup**:
@@ -78,8 +78,8 @@ To obtain credentials:
 3. Copy AppID and AppSecret
 
 Where to save?
-A) Project-level: .super-creator/.env (this project only)
-B) User-level: ~/.super-creator/.env (all projects)
+A) Project-level: .v2creator/.env (this project only)
+B) User-level: ~/.v2creator/.env (all projects)
 ```
 
 After location choice, prompt for values and write to `.env`:

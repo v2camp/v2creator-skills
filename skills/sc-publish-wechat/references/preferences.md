@@ -10,9 +10,9 @@ The `sc-publish-wechat` skill supports custom configuration via `EXTEND.md`.
 
 The skill checks for `EXTEND.md` in the following locations (priority order):
 
-1.  **Project-level**: `.super-creator/publish-wechat/EXTEND.md`
-2.  **XDG Config**: `${XDG_CONFIG_HOME:-$HOME/.config}/super-creator/publish-wechat/EXTEND.md`
-3.  **User-level**: `$HOME/.super-creator/publish-wechat/EXTEND.md`
+1.  **Project-level**: `.v2creator/publish-wechat/EXTEND.md`
+2.  **XDG Config**: `${XDG_CONFIG_HOME:-$HOME/.config}/v2creator/publish-wechat/EXTEND.md`
+3.  **User-level**: `$HOME/.v2creator/publish-wechat/EXTEND.md`
 
 ### Supported Keys
 
