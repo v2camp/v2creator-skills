@@ -2,6 +2,8 @@
 
 Run **after** outline is confirmed. Produces the final caption + image content spec.
 
+口吻按 [references/voice.md](../references/voice.md)；平台约束按 [references/xhs-style.md](../references/xhs-style.md)；写完跑 [references/writing-qc.md](../references/writing-qc.md)。短文优先取 [references/craft.md](../references/craft.md) 里的「具体 > 抽象 / 升番 / 对立面承认」。
+
 ## Input
 
 Read the confirmed `outline.md` from the outline stage.
@@ -236,6 +238,8 @@ images:
 
 ## Quality checklist
 
+平台与格式（本 prompt）：
+
 - [ ] 封面标题 ≤ 15 字
 - [ ] 正文 ≤ 500 字
 - [ ] 每张图 ≤ 2 个要点
@@ -246,3 +250,10 @@ images:
 - [ ] 内容来自真实纪要（无虚构）
 - [ ] image spec 字段与 sc-xhs-images 命名一致
 - [ ] style / layout 值在可用列表中
+
+写作质检（见 [references/writing-qc.md](../references/writing-qc.md)，输出报告）：
+
+- [ ] L1 硬性规则（AI 味词 / 口吻禁区 / 虚构经历 / 无源事实 / 空泛专名）
+- [ ] L2 风格（对照 voice.md）
+- [ ] L3 内容（主张支撑、反方、具体度）
+- [ ] L4 可读性终审

@@ -2,6 +2,8 @@
 
 Run **before** drafting. The outline locks structure so the draft doesn't drift.
 
+主张与 Source map 见 [references/stages.md](../references/stages.md)；口吻在 `Voice notes` 里记 1–3 条（见 [references/voice.md](../references/voice.md)）。
+
 ## Step 1 — Read all sources
 
 Read every input file end to end. If a source is > 5000 字, summarize it in 5 bullets first, then continue.
@@ -53,7 +55,7 @@ Below structure, list every claim ↔ source file/anchor. If a claim has no sour
 
 ## Step 10 — Emit outline.md
 
-Use the schema in SKILL.md. Save to the user-specified path.
+Use the schema in [references/stages.md](../references/stages.md) (Angle / Reader / Core claim / Counter-view / Structure / Sections / Hook / CTA / Source map / Voice notes). Save to the user-specified path.
 
 ## Anti-patterns the outliner must avoid
 
@@ -62,3 +64,4 @@ Use the schema in SKILL.md. Save to the user-specified path.
 - ❌ Writing draft prose in the outline (bullets only)
 - ❌ Multiple core claims ("we'll discuss A, B, and C" — pick one)
 - ❌ Ignoring `--angle` if user provided it
+- ❌ Skipping Voice notes when the user has an author profile

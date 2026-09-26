@@ -13,7 +13,7 @@ AI 驱动的内容创作工具箱，专为小红书和微信公众号打造。�
 | 阶段 | 能力 | 核心 Skill |
 |------|------|-----------|
 | 🔍 选题 | 竞品内容分析、热点挖掘 | `sc-content-mining` |
-| ✍️ 写作 | 爆款文案生成、风格调整 | `sc-writer` |
+| ✍️ 写作 | 大纲+草稿、口吻规格、四层写作质检 | `sc-writer` |
 | 🎨 配图 | 封面图、文章插画、小红书信息图（免费生图） | `sc-web-ai`、`sc-cover-image`、`sc-article-illustrator`、`sc-xhs-images` |
 | ✅ 审核 | 合规检查、事实核查、图片压缩 | `sc-content-review`、`sc-compress-image`、`sc-format-markdown` |
 | 🚀 发布 | 一键发布到公众号/小红书 | `sc-publish-wechat`、`sc-publish-xhs` |
@@ -89,7 +89,7 @@ v2creator-skills 的核心是 Markdown 文件 + TypeScript 脚本，**不绑定�
 | Skill | 用途 |
 |-------|------|
 | `sc-pipeline` | **一键全流程**：自动完成选题→写作→配图→审核→发布 |
-| `sc-writer` | 文案写作：小红书/公众号不同风格适配 |
+| `sc-writer` | 文案写作：唯一主张大纲、口吻档案、双平台草稿与写作质检 |
 | `sc-content-mining` | 内容挖掘：竞品分析、素材收集 |
 
 ### 视觉创作

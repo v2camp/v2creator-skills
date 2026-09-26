@@ -2,9 +2,11 @@
 
 Input: an outline produced by `outline-wechat.md`. Output: publish-ready markdown.
 
+口吻按 [references/voice.md](../references/voice.md)（含 EXTEND.md 覆盖与 `Voice notes`）；平台排版按 [references/wechat-style.md](../references/wechat-style.md)；写完跑 [references/writing-qc.md](../references/writing-qc.md)。需要提升可读性时按需取 [references/craft.md](../references/craft.md) 2–4 种技法。
+
 ## Step 0 — Sanity check the outline
 
-Verify the outline has Reader, Core claim, Counter-view. If any are missing, refuse and ask the user to re-run `outline`.
+Verify the outline has Reader, Core claim, Counter-view. If any are missing, refuse and ask the user to re-run `outline`. Confirm Voice notes / author profile before drafting.
 
 ## Step 1 — Title
 
@@ -50,17 +52,19 @@ If the outline's source map contains URLs, append:
 
 公众号正文外链不可点击 → 这是必要的底部引用。
 
-## Step 6 — Final pass
+## Step 6 — Final pass + Writing QC
 
-Re-read the draft once. Cut for:
-- Repeated points (each idea once)
-- "其实" / "事实上" / "可以说" 等填充词
-- 段尾的"!"
-- 通用比喻（"就像...一样"）
+1. Re-read once. Cut for:
+   - Repeated points (each idea once)
+   - "其实" / "事实上" / "可以说" 等填充词
+   - 段尾的"!"
+   - 通用比喻（"就像...一样"）
+2. 对照 [references/rewrite-examples.md](../references/rewrite-examples.md) 扫假设性经历 / 空泛判断 / 教科书结构。
+3. 按 [references/writing-qc.md](../references/writing-qc.md) 跑 L1–L4，输出写作质检报告（与 `sc-content-review` 分工，不重复做合规）。
 
 ## Step 7 — Emit draft.md
 
-Save to user-specified path.
+Save to user-specified path (附质检报告)。
 
 ## Anti-patterns
 

@@ -1,5 +1,23 @@
 # 更新日志
 
+## 3.6.0 - 2026-09-25
+
+### 新增（sc-writer 写作能力升级）
+
+对照外部优秀写作 skill 的可迁移机制（口吻规格、技法库、改写对照、四层质检），**不移植任何单一作者人格**：
+
+- **`references/voice.md` 口吻规格**：七维口吻档案（价值观/读者关系/判断句型/转场口癖/情绪标点/绝对禁区/开头收尾签名）+ 通用 AI 味禁区 + 示例档案（few-shot，可替换）
+- **`references/writing-qc.md` 四层写作质检**：L1 硬性规则 → L2 风格 → L3 内容 → L4 可读性终审 + 报告模板；与 `sc-content-review` 划清边界（文风结构 vs 发布合规）
+- **`references/craft.md` 技法库**：亲自下场、人物画像、知识随手掏、升番、回环、对立面承认等 12 条可选技法，按文类取 2–4 种
+- **`references/rewrite-examples.md` 改写对照**：6 组「AI 初稿 → 人工改写 → 差异点」（求职/职场域 few-shot）
+
+### 变更
+
+- **`references/stages.md` 修复并写全**：消除「See original SKILL.md」断链；补 Outline/Draft schema、验收标准、与兄弟 skill 边界表
+- **`SKILL.md`**：触发词加厚（含模糊「帮我写 / 用我的风格写」）；新增「角色边界」（经历与核心判断必须由人提供，禁止编造）；挂接新 references；CLI 说明改为「以 prompt 驱动为准」
+- **`prompts/*`**：outline/draft 均挂 voice 与 stages；draft 跑 writing-qc，并对照 rewrite-examples
+- **sc-writer `version` 0.3.0 → 0.4.0**
+
 ## 3.5.0 - 2026-07-18
 
 ### 新增

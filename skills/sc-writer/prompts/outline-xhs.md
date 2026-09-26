@@ -2,6 +2,8 @@
 
 Run **before** drafting. The outline locks structure so the caption + image series don't drift.
 
+产出 schema 见 [references/stages.md](../references/stages.md)；口吻记入 Voice notes（[references/voice.md](../references/voice.md)）。
+
 ## Step 1 — Read sources & mining output
 
 Read the source material (1v1 纪要, sc-content-mining output, etc.) end to end. If a source is > 3000 字, extract 5 key bullets first.
