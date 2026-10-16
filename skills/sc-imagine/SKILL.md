@@ -1,6 +1,7 @@
 ---
 name: sc-imagine
-description: AI image generation with OpenAI, Azure OpenAI, Google, OpenRouter, MiniMax, Jimeng, Seedream and Replicate APIs. Supports text-to-image, reference images, aspect ratios, and batch generation from saved prompt files. Sequential by default; use batch parallel generation when the user already has multiple prompts or wants stable multi-image throughput. **NOTE: This is the SECONDARY image generation method. For most cases, prefer sc-web-ai (free web-based Gemini/ChatGPT) first. Use sc-imagine when you need batch generation, API stability, or have API keys configured.** Use when user asks to generate, create, or draw images AND explicitly requests API-based generation, needs batch mode, or web AI is unavailable.
+description: >-
+  AI image generation with OpenAI, Azure OpenAI, Google, OpenRouter, MiniMax, Jimeng, Seedream and Replicate APIs. Supports text-to-image, reference images, aspect ratios, and batch generation from saved prompt files. Sequential by default; use batch parallel generation when the user already has multiple prompts or wants stable multi-image throughput. **NOTE: This is the SECONDARY image generation method. For most cases, prefer sc-web-ai (free web-based Gemini/ChatGPT) first. Use sc-imagine when you need batch generation, API stability, or have API keys configured.** Use when user asks to generate, create, or draw images AND explicitly requests API-based generation, needs batch mode, or web AI is unavailable.
 version: 1.57.0
 ---
 

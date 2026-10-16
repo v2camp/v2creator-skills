@@ -1,6 +1,7 @@
 ---
 name: sc-web-ai
-description: Use Gemini/ChatGPT web version for image generation and other tasks via browser automation. No API key needed. Use when: generate images with Gemini Nano Banana/Imagen, generate images with ChatGPT DALL-E, use free web AI capabilities, API is not available/too expensive.
+description: >-
+  Use Gemini/ChatGPT web version for image generation and other tasks via browser automation. No API key needed. Use when: generate images with Gemini Nano Banana/Imagen, generate images with ChatGPT DALL-E, use free web AI capabilities, API is not available/too expensive.
 ---
 
 # sc-web-ai：网页版 AI 能力使用指南
